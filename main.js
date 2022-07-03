@@ -258,7 +258,8 @@ const normalize_ipa = (a) => a
     .replace(/[:']/g, "")
     .replace(/ʲ/g, "j")
     .replace(/d͡z/g, "dz")
-    .replace(/y/g, "j");
+    .replace(/y/g, "j")
+    .replace(/t͡s/g, "ts");
 for (const dat of dataset_1.dataset) {
     try {
         const guessed = to_ipa(sub_pipeline(analyze(to_tokens(dat.word)))).join("");

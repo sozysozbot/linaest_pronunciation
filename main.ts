@@ -267,6 +267,7 @@ const normalize_ipa = (a: string) => a
 	.replace(/ʲ/g, "j")
 	.replace(/d͡z/g, "dz")
 	.replace(/y/g, "j")
+	.replace(/t͡s/g, "ts")
 	;
 
 for (const dat of dataset) {
